@@ -11,15 +11,18 @@
 
 # To use this repo
     1. Clone the repo
+
     ```
-        https://github.com/YujenM/React_practice.git
+    https://github.com/YujenM/React_practice.git
     ```
     2. Install the dependencies
+    
     ```
-        npm install
+    npm install
     ```
     3. Run the Program
+
     ```
-        npm start
+    npm start
     ```
 
