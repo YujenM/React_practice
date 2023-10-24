@@ -1,6 +1,9 @@
 # This Repository is for my practice of React
 
 # Components Made Until now 
+
+## Navbar component
+- Created a navbar with logo and links to different pages.
 ## Usestate
 - The UseState component is a fundamental example in React, showcasing the application of the useState hook for state management. It provides a straightforward counter with increment and decrement buttons, ensuring the count never falls below zero. This component serves as a practical illustration for those looking to understand how to manage and display state in React applications.
 ## Nightmode
