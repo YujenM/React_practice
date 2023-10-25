@@ -1,70 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root{
-    --mainColor: #020385;
-    --maincolorlight:#34359D;
-    --secondarycolor:#858402;
-    --textcolor:#E5E5E5;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.Navbar {
+    /* background-color: aqua; */
     height: 80px;
-    padding: 0 2rem;
-    background-color: var(--mainColor);
-    color: var(--textcolor);
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: 250px;
 }
-nav a{
-    margin: 0 2rem;
-    color: var(--textcolor);
-    text-decoration: none;
-}
-nav a:hover{
-    color: var(--secondarycolor);
-}
-header .nav-btn{
-    padding: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 30px;
-    color: var(--textcolor);
-    opacity: 0;
-    visibility: hidden;
-}
-@media screen and (max-width:700px) {
-    header .nav-btn{
-        visibility: visible;
-        opacity: 1;
-    }
-    header nav{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 1.5rem;
-        background-color: var(--mainColor);
-        transition: 1s;
-        transform: translate(-100vh);
-    }
-    header .responsive_nav{
-        transform: none; 
-    }
-    nav .nav-close-btn{
-        position: absolute;
-        top:2rem;
-        right: 2rem;
-    }
 
+.menubars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+}
+
+.nav-menu {
+    background-color: aqua;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 0.85s; 
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 0.35s; 
+}
+
+.nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.nav-text a:hover {
+    background-color: blue;
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.navbar-toggle {
+    background-color: aqua;
+    font-size: 40px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+span {
+    margin-left: 16px;
 }
