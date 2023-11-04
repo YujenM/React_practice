@@ -20,6 +20,11 @@ export default function UseState() {
                 <button className='margin' onClick={decrement} disabled={Count<=0} >-</button>
                 <p className='margin'>{Count}</p>
                 <button className='margin' onClick={incremet}>+</button>
+                
+            </div>
+            <div className='container'>
+                <h1 className='maintile'>Counter</h1>
+                <p className='titlemeaning'>The UseState component demonstrates the power of React's useState hook. It showcases a simple counter with increment and decrement buttons, ensuring the count never goes below zero. A perfect starting point for mastering state management in React.</p>
             </div>
         </div>
     )

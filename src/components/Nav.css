@@ -1,20 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kadwa:wght@400;700&family=Lato:wght@300&family=Roboto:wght@100;300&family=Tsukimi+Rounded:wght@500&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --mainColor: #1A1A1D; 
+    --maincolorlight: #4E4E50; 
+    --secondarycolor:#6F2232; 
+    --textcolor: #E5E5E5;
+}
+nav{
+    z-index: 1;
+}
 .Navbar {
-    /* background-color: aqua; */
+    position: sticky;
     height: 80px;
     display: flex;
     justify-content: flex-start; 
     align-items: center;
-    width: 250px;
+    background-color:var(--mainColor);
+    z-index: 1;
+}
+
+.logo{
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--textcolor);
+    cursor: pointer;
 }
 
 .menubars {
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
+    color: var(--secondarycolor);
 }
 
 .nav-menu {
-    background-color: aqua;
+    background-color: var(--mainColor);
     width: 250px;
     height: 100vh;
     display: flex;
@@ -41,7 +66,7 @@
 
 .nav-text a {
     text-decoration: none;
-    color: aliceblue;
+    color: var(--textcolor);
     font-size: 18px;
     width: 95%;
     height: 100%;
@@ -52,15 +77,18 @@
 }
 
 .nav-text a:hover {
-    background-color: blue;
+    background-color: var(--secondarycolor);
 }
 
 .nav-menu-items {
     width: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 
 .navbar-toggle {
-    background-color: aqua;
+    background-color: var(--mainColor);
     font-size: 40px;
     width: 100%;
     height: 80px;

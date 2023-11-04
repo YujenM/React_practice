@@ -40,7 +40,13 @@ export default function Todolist (prop) {
   }, [items]);
   
   return (
-    <div className='center'>
+    <div>
+      <div className='container'>
+        <h1 className='maintile'>To-Do List Component</h1>
+        <p className='titlemeaning'>Our To-Do List component is a practical addition to your React app. Manage your tasks with ease, add or remove them, and rest assured that your tasks are saved in your browser's local storage. It's the perfect tool for staying organized.</p>
+      </div>
+      <div className='center'>
+      
       <div className='todolist container'>
         <h1>{prop.title}</h1>
         <input type='text' placeholder='Add an Item' value={newitem} onChange={e=>changenewitem(e.target.value)}/><br/>
@@ -52,10 +58,11 @@ export default function Todolist (prop) {
                 <li key={item.id}>{item.value}<button className='deletebutton' onClick={()=>deleteItem(item.id)}><FontAwesomeIcon icon={faXmark} /></button></li>
               )
             })
-          }
-          
+          }   
         </ul>
       </div>
     </div>
+    </div>
+    
   )
 }

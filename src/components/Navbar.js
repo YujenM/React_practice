@@ -15,12 +15,13 @@ export default function Navbar() {
                 <Link to="#" className='menubars'>
                     <FontAwesomeIcon icon={icon.faBars} size="xl"  onClick={showsidebar}/>
                 </Link>
+                <h3 className='logo container'>React Practice</h3>
             </div>
             <nav className={sidebar?'nav-menu active':'nav-menu'}>
                 <ul className='nav-menu-items' onClick={showsidebar}>
                     <li className='navbar-toggle'>
                         <Link to='#' className='menu-bars'>
-                        <FontAwesomeIcon icon={icon.faXmark}  />
+                        <FontAwesomeIcon className='menubars' icon={icon.faXmark}  />
                         </Link>
                     </li>
                     {Sidebara.map((item,index)=>{
@@ -33,9 +34,7 @@ export default function Navbar() {
                             </li>
                         );
                     })}
-
                 </ul>
-
             </nav>
         </>
         

@@ -27,4 +27,6 @@ export const Sidebara=[
         icon : <FontAwesomeIcon icon={icon.faList} />,
         cName:'nav-text'
     }
+    
+    
 ]
