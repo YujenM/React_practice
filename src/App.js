@@ -7,11 +7,13 @@ import Usestatecomponent from './components/usestate';
 import Buttonusestate from './components/nightmode'
 // import Footer from './components/Footer';
 import LoadingBar from 'react-top-loading-bar'
+import Slider from './components/Slider';
 import {
   BrowserRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
+
 
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
         <Route path='/React_practice/src/components/usestate.js' element={<Usestatecomponent/>}></Route>
         <Route path='/React_practice/src/components/nightmode.js' element={<Buttonusestate/>}></Route>
         <Route path='/React_practice/src/components/Todolist.js' element={<Todo button='Add Item'/>}></Route>
+        <Route path='/React_practice/src/components/Slider.js' element={<Slider/>}></Route>
       </Routes>
       {/* <Footer/> */}
     </Router>

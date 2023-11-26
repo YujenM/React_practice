@@ -26,7 +26,12 @@ export const Sidebara=[
         path: '/React_practice/src/components/Todolist.js',
         icon : <FontAwesomeIcon icon={icon.faList} />,
         cName:'nav-text'
+    },
+    {
+        title:"Slider",
+        path: "/React_practice/src/components/slider.js",
+        icon:<FontAwesomeIcon icon={icon.faRightLeft}/>,
+        cName:'nav-text'
     }
-    
     
 ]
