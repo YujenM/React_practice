@@ -8,6 +8,7 @@ import Buttonusestate from './components/nightmode'
 // import Footer from './components/Footer';
 import LoadingBar from 'react-top-loading-bar'
 import Slider from './components/Slider';
+import Conditionalrendering from './components/conditionrendering'
 import {
   BrowserRouter as Router,
   Route,
@@ -23,7 +24,7 @@ function App() {
       <Nav/>
       <LoadingBar
         color='#f11946'
-        progress={progress}
+        progress={progress} 
         onLoaderFinished={() => setProgress(0)}
       />
       <Routes>
@@ -33,6 +34,7 @@ function App() {
         <Route path='/React_practice/src/components/nightmode.js' element={<Buttonusestate/>}></Route>
         <Route path='/React_practice/src/components/Todolist.js' element={<Todo button='Add Item'/>}></Route>
         <Route path='/React_practice/src/components/Slider.js' element={<Slider/>}></Route>
+        <Route path="/React_practice/src/components/conditionrendering.js" element={<Conditionalrendering/>}></Route>
       </Routes>
       {/* <Footer/> */}
     </Router>

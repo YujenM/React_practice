@@ -32,6 +32,11 @@ export const Sidebara=[
         path: "/React_practice/src/components/slider.js",
         icon:<FontAwesomeIcon icon={icon.faRightLeft}/>,
         cName:'nav-text'
+    },
+    {
+        title:"Conditional rendering",
+        path: "/React_practice/src/components/conditionrendering.js",
+        icon:<FontAwesomeIcon icon={icon.faCheck}/>,
+        cName:'nav-text'
     }
-    
 ]

@@ -217,4 +217,11 @@ cursor: pointer;
 
 
 
+/* conditional rendering */
+
+.loginandoutbtn{
+  margin: 2% 2% 2% 2%;
+}
+
+
 
