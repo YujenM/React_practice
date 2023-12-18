@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as icon from '@fortawesome/free-solid-svg-icons';
 
-export const Sidebara=[
+export const navbarlinkinfo=[
     {
         title:'Home',
         path: '/',
@@ -37,6 +37,12 @@ export const Sidebara=[
         title:"Conditional rendering",
         path: "/React_practice/src/components/conditionrendering.js",
         icon:<FontAwesomeIcon icon={icon.faCheck}/>,
+        cName:'nav-text'
+    },
+    {
+        title:'Fetch Api',
+        path:'/React_practice/src/components/FetchAPI.js',
+        icon:<FontAwesomeIcon icon={icon.faTruckFast}/>,
         cName:'nav-text'
     }
 ]

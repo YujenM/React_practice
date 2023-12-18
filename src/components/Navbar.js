@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as icon from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
-import { Sidebara } from './Sidebara';
+import { navbarlinkinfo } from './Navbarlinksinfo';
 import './Nav.css'
 
 export default function Navbar() {
@@ -24,7 +24,7 @@ export default function Navbar() {
                         <FontAwesomeIcon className='menubars' icon={icon.faXmark}  />
                         </Link>
                     </li>
-                    {Sidebara.map((item,index)=>{
+                    {navbarlinkinfo.map((item,index)=>{
                         return(
                             <li key={index} className={item.cName}>
                                 <Link to={item.path}>

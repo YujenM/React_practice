@@ -9,6 +9,7 @@ import Buttonusestate from './components/nightmode'
 import LoadingBar from 'react-top-loading-bar'
 import Slider from './components/Slider';
 import Conditionalrendering from './components/conditionrendering'
+import Fetch from './components/FetchAPI'
 import {
   BrowserRouter as Router,
   Route,
@@ -35,6 +36,7 @@ function App() {
         <Route path='/React_practice/src/components/Todolist.js' element={<Todo button='Add Item'/>}></Route>
         <Route path='/React_practice/src/components/Slider.js' element={<Slider/>}></Route>
         <Route path="/React_practice/src/components/conditionrendering.js" element={<Conditionalrendering/>}></Route>
+        <Route path ="/React_practice/src/components/FetchAPI.js" element={<Fetch/>}></Route>
       </Routes>
       {/* <Footer/> */}
     </Router>
