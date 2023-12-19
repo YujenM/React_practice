@@ -224,4 +224,73 @@ cursor: pointer;
 }
 
 
+/* Fetch Api */
+
+.weather{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.weatherchild{
+  background-color: #2196F3;
+  background-image:url(./components/images/weather.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  object-fit: cover;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.getinformation{
+  margin:10% 0;
+  /* background-color: #1A1A1D; */
+  width: 20vw;
+  margin: 5% 25%;
+}
+.Getcountry{
+  text-align: center;
+  
+  border: 1px solid #3498db; 
+  border-radius: 10px;
+  padding: 10px; 
+  width: 200px;
+  transition: width 0.3s ease;
+}
+.Getcountry:focus {
+  outline: none; 
+  border-color: #2ecc71; 
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); 
+}
+.Apisearchbtn{
+  margin: 0 3%;
+  cursor: pointer;
+  color: white;
+}
+.Weatherimg{
+  width:20%;
+
+}
+.datasapi{
+  margin-bottom: 5%;
+}
+.Apidata{
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 5%;
+
+}
+.bgcolor{
+  background-color: rgba(129, 98, 255, 0.8);
+  margin:5% 0;
+  width: 30vw;
+
+}
+
+
+
+
+
 

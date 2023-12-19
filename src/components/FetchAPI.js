@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import '../App.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as icon from '@fortawesome/free-solid-svg-icons';
 
 export default function FetchAPI() {
 const [data, setData] = useState(null);
@@ -25,31 +28,42 @@ const serach=async()=>{
         console.log('Error fetching weather data:', error);
         });
 }
-
-
-return (
-<div className="container">
-<input type="text" placeholder="Enter country name" className="Getcountry"/>
-    <button onClick={serach}>CLickme</button>
-    {error ? (
-    <div>
-        <p>
-        This is a free API, so there is a limit in getting data, and this
-        message is shown due to reaching its limit.
-        </p>
-    </div>
-    ) : (
-    data && (
-        <div>
-        <img
-            alt="weather icon"
-            src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`}
-        />
-        <h1>{data.name}</h1>
-        
+let temprature=data ? Math.round(data.main.temp - 273.15) : null;
+let sunrise=data?data.sys.sunrise*1000:null;
+let sunset=data?data.sys.sunset*1000:null;
+const sunrisetime = sunrise ? new Date(sunrise).toTimeString() : null;
+const sunsettime = sunset ? new Date(sunset).toTimeString() : null;
+return(
+    <div className="container weather">
+        <div className="weatherchild">
+            <div className="bgcolor">
+                <div className="getinformation">
+                    <input type="text" placeholder="Enter country name" className="Getcountry"/>
+                    <FontAwesomeIcon className="Apisearchbtn" onClick={serach} icon={icon.faMagnifyingGlass} size="2xl"/>
+                </div>
+                {error?(
+                    <div>
+                        <p>This is a free API, so there is a limit in getting data, and this message is shown due to reaching its limit.</p>
+                    </div>
+                ):(
+                    data &&(
+                        <div className="datasapi">
+                            <img className="Weatherimg" alt="weather icon" src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`}/>
+                            <p className="Apidata">Description: {data.weather[0].description}</p>
+                            <p className="Apidata">Country: {data.name}</p> 
+                            <p className="Apidata">Temprature: {temprature}℃</p>
+                            <p className="Apidata">Sunrise: {sunrisetime}</p>
+                            <p className="Apidata">Sunset: {sunsettime}</p>  
+                        </div>
+                    )
+                )
+                }
+            </div>
         </div>
-    )
-    )}
-</div>
-);
+
+    </div>
+)
 }
+
+
+
