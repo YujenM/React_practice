@@ -33,6 +33,11 @@ let sunrise=data?data.sys.sunrise*1000:null;
 let sunset=data?data.sys.sunset*1000:null;
 const sunrisetime = sunrise ? new Date(sunrise).toTimeString() : null;
 const sunsettime = sunset ? new Date(sunset).toTimeString() : null;
+const timestamp=data?data.dt:null;
+const formatted_time = timestamp ? new Date(timestamp * 1000).toLocaleString() : null;
+
+
+
 return(
     <div className="container weather">
         <div className="weatherchild">
@@ -43,13 +48,14 @@ return(
                 </div>
                 {error?(
                     <div>
-                        <p>This is a free API, so there is a limit in getting data, and this message is shown due to reaching its limit.</p>
+                        <p>Error in finding this country</p>
                     </div>
                 ):(
                     data &&(
                         <div className="datasapi">
                             <img className="Weatherimg" alt="weather icon" src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`}/>
                             <p className="Apidata">Description: {data.weather[0].description}</p>
+                            <p className="Apidata">{formatted_time}</p>
                             <p className="Apidata">Country: {data.name}</p> 
                             <p className="Apidata">Temprature: {temprature}℃</p>
                             <p className="Apidata">Sunrise: {sunrisetime}</p>

@@ -226,68 +226,110 @@ cursor: pointer;
 
 /* Fetch Api */
 
-.weather{
+.weather {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 5%;
 }
-.weatherchild{
+
+.weatherchild {
   background-color: #2196F3;
-  background-image:url(./components/images/weather.png);
+  background-image: url(./components/images/weather.png);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   object-fit: cover;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  margin: 5%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
-.getinformation{
-  margin:10% 0;
-  /* background-color: #1A1A1D; */
+
+.getinformation {
+  margin: 10% 0;
   width: 20vw;
+  display: flex;
+  align-items: center;
   margin: 5% 25%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 5% 5%;
+  }
 }
-.Getcountry{
+
+.Getcountry {
   text-align: center;
-  
-  border: 1px solid #3498db; 
+  border: 1px solid #3498db;
   border-radius: 10px;
-  padding: 10px; 
+  padding: 10px;
   width: 200px;
   transition: width 0.3s ease;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: 1%;
+  }
 }
+
+.Apisearchbtn {
+  cursor: pointer;
+  color: white;
+
+  @media (max-width: 768px) {
+    margin-left: 1%;
+  }
+}
+
+
 .Getcountry:focus {
-  outline: none; 
-  border-color: #2ecc71; 
-  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); 
+  outline: none;
+  border-color: #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
 }
-.Apisearchbtn{
+
+.Apisearchbtn {
   margin: 0 3%;
   cursor: pointer;
   color: white;
 }
-.Weatherimg{
-  width:20%;
 
+.Weatherimg {
+  width: 20%;
+  margin: 0 40%;
+
+  @media (max-width: 768px) {
+    width: 30%;
+    margin: 0 35%;
+  }
 }
-.datasapi{
+
+.datasapi {
   margin-bottom: 5%;
 }
-.Apidata{
+
+.Apidata {
   font-size: 1.5rem;
   color: white;
   margin: 0 5%;
-
 }
-.bgcolor{
+
+.bgcolor {
   background-color: rgba(129, 98, 255, 0.8);
-  margin:5% 0;
+  margin: 5% 0;
   width: 30vw;
 
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
+
 
 
 
