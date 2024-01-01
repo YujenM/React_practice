@@ -44,5 +44,18 @@ export const navbarlinkinfo=[
         path:'/React_practice/src/components/FetchAPI.js',
         icon:<FontAwesomeIcon icon={icon.faTruckFast}/>,
         cName:'nav-text'
+    },
+    {
+        title:'Ref',
+        path:'/React_practice/src/components/Ref.js',
+        icon:<FontAwesomeIcon icon={icon.faTruckFast}/>,
+        cName:'nav-text'
+    },
+    {
+        title:'Ref',
+        path:'/React_practice/src/components/Stopwatch.js',
+        icon:<FontAwesomeIcon icon={icon.faTruckFast}/>,
+        cName:'nav-text'
     }
+
 ]

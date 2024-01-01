@@ -15,6 +15,8 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import Ref from './Ref';
+import Stopwatch from './Stopwatch';
 
 
 
@@ -37,6 +39,9 @@ function App() {
         <Route path='/React_practice/src/components/Slider.js' element={<Slider/>}></Route>
         <Route path="/React_practice/src/components/conditionrendering.js" element={<Conditionalrendering/>}></Route>
         <Route path ="/React_practice/src/components/FetchAPI.js" element={<Fetch/>}></Route>
+        <Route path ="/React_practice/src/components/Ref.js" element={<Ref/>}></Route>
+        <Route path ="/React_practice/src/components/Stopwatch.js" element={<Stopwatch/>}></Route>
+
       </Routes>
       {/* <Footer/> */}
     </Router>
